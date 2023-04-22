@@ -5,6 +5,8 @@ const { v4: uuidv4 } = require('uuid');
 const app = express();
 const PORT = 3000;
 
+let tasks = [];
+
 app.get('/tasks', (req, res) => {
     console.log("Welcome to the task manager ");
     res.json(tasks);
